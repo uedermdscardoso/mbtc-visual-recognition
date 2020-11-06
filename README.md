@@ -1,1 +1,0 @@
-# mbtc-visual-recognition
