@@ -1,8 +1,10 @@
 
 import 'package:camera/camera.dart';
 import 'package:flutter/material.dart';
-import 'package:mbtc_visual_recognition/camera_screen.dart';
-import 'package:mbtc_visual_recognition/take_picture_screen.dart';
+import 'package:mbtc_visual_recognition/stores/main_store.dart';
+import 'package:mbtc_visual_recognition/widgets/camera_screen.dart';
+
+final mainStore = MainStore();
 
 void main() async {
   WidgetsFlutterBinding.ensureInitialized();
@@ -13,7 +15,6 @@ void main() async {
 
   runApp(App(camera: firstCamera));
 }
-
 
 class App extends StatelessWidget {
 
